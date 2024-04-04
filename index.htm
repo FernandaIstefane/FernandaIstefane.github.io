@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas de hogwarts</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Harry Potter<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.htm">inicio</a></li>
+          <li><a href="grifinoria.html">Grifinoria</a></li>
+          <li><a href="lufalufa.html">LufaLufa</a></li>
+          <li><a href="sonserina.html">Sonserina</a></li>
+          <li><a href="corvinal.html">Corvinal</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Casas de Hogwarts</h2>
+        <p>Hogwarts é dividida em quatro Casas: Gryffindor, Slytherin, Hufflepuff e Ravenclaw. O aluno entra na casa que o chapéu seletor escolher, o qual leva em consideração características emocionais, psicológicas e intelectuais do bruxo, podendo também levar em consideração o desejo do próprio aluno.</p>
+        <button>Descubra mais</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
