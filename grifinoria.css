@@ -53,7 +53,7 @@ header .navbar {
 
 .hero-section {
   height: 100vh;
-  background-image: url("imagens/grifinoria.jpeg");
+  background-image: url("\imagens/grifinoria.jpeg");
   background-position: center;
   background-size: cover;
   display: flex;
